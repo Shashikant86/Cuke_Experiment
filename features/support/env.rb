@@ -3,8 +3,10 @@ require "Capybara"
 require "Capybara/cucumber"
 require "rspec"
 require 'capybara/poltergeist'
+require 'capybara/rspec'
+require 'capybara/accessible'
 
-Capybara.default_driver = :poltergeist
+Capybara.default_driver = :accessible
 Capybara.register_driver :poltergeist do |app|
 
     options = {
@@ -17,5 +19,9 @@ Capybara.register_driver :poltergeist do |app|
     }
 
     Capybara::Poltergeist::Driver.new(app, options)
+end
+
+Capybara.register_driver :accessibility do |app|
+    Capybara::Accessible::Driver.new(app)
 end
 

@@ -12,6 +12,8 @@ gem "poltergeist"
 gem "selenium-webdriver"
 gem "rest-client"
 gem "json_pure"
+gem "capybara-accessible"
+
 
 
 	
