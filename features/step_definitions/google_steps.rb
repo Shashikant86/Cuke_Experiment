@@ -1,6 +1,10 @@
 
-Given(/^I am on the home page$/) do
+Given(/^I am on the Google home page$/) do
 puts  visit "http://www.google.com"
+end
+
+Given(/^I am on the BBC home page$/) do
+puts  visit "http://www.bbc.co.uk"
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
@@ -18,6 +22,10 @@ Then(/^I should see "(.*?)"$/) do |text|
   #puts page.response_headers.to_a
   #page.driver.debug
  
+end
+
+Then(/^I should see page meet all accessibility criteria$/) do
+
 end
 
 
