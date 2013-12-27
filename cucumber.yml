@@ -1,3 +1,3 @@
-default: --profile pretty
+default: --format html --out report<%= ENV['TEST_ENV_NUMBER'] %>.html
 html_report: --format progress --format html --out=report/features_report.html
 pretty: -f pretty

@@ -4,9 +4,11 @@ require "Capybara/cucumber"
 require "rspec"
 require 'capybara/poltergeist'
 require 'capybara/rspec'
-require 'capybara/accessible'
+# require 'capybara/accessible'
 
-Capybara.default_driver = :accessible
+Capybara.default_driver = :selenium
+
+
 Capybara.register_driver :poltergeist do |app|
 
     options = {
