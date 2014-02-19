@@ -8,6 +8,13 @@ gem "poltergeist"
 gem "selenium-webdriver"
 gem "capybara-accessible"
 gem "cuke_sniffer"
+gem "parallel"
+gem "json"
+gem "rake"
+gem "yard-cucumber"
+gem "redcarpet"
+
+
 
 
 
