@@ -2,12 +2,10 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 1.9.3
+  - 2.0.0
 
 before_script: 'bundle install'
-script: 'bundle exec rake cucumber'
-
-bundler_args: --without development
+script: 'bundle exec rake yard'
 
 branches:
   only:
