@@ -2,9 +2,9 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 2.0.0
   - 1.9.3
 
+before_script: 'bundle install'
 script: 'bundle exec rake cucumber'
 
 bundler_args: --without development
@@ -15,4 +15,4 @@ branches:
 
 notifications:
   email:
-    - you@example.com
+    - shashikant.jagtap@aol.co.uk

@@ -13,6 +13,8 @@ gem "json"
 gem "rake"
 gem "yard-cucumber"
 gem "redcarpet"
+gem "rubocop"
+# gem 'rubocop-checkstyle_formatter', require: false
 
 
 

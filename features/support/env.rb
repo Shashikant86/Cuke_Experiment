@@ -1,4 +1,3 @@
- 
 require "Capybara"
 require "Capybara/cucumber"
 require "rspec"
@@ -26,4 +25,3 @@ end
 Capybara.register_driver :accessibility do |app|
     Capybara::Accessible::Driver.new(app)
 end
-
