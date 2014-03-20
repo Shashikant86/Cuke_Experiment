@@ -1,0 +1,18 @@
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.0.0
+  - 1.9.3
+
+script: 'bundle exec rake cucumber'
+
+bundler_args: --without development
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - you@example.com
